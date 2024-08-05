@@ -5,7 +5,8 @@ export const stationController = {
     const station = await stationStore.getStationById(request.params.id);
     const viewData = {
       title: "Station",
-      
-    }
-  }
-}
+      station: station,
+    };
+    response.render("station-view", viewData);
+  },
+};
