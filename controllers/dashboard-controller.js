@@ -13,5 +13,6 @@ export const dashboardController = {
     };
     console.log(`adding station ${newStation.title}`);
     response.redirect("/dashboard");
-  }, 
+  },
+  
 };
