@@ -41,7 +41,7 @@ export const reportStore = {
   },
   
   async updateReport(report, updatedReport) {
-    report.title = updatedReport
-  }
-  
+    report.title = updatedReport.title;
+    await db.write();
+  },
 };
