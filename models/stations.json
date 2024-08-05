@@ -1,1 +1,9 @@
-{"file":"./models/stations.json","stations":[]}
+{
+  "file": "./models/stations.json",
+  "stations": [
+    {
+      "title": "station 1",
+      "_id": "d5a6490a-64f8-4dc8-9449-4829041efcaa"
+    }
+  ]
+}

@@ -18,5 +18,4 @@ export const dashboardController = {
     await stationStore.addStation(newStation);
     response.redirect("/dashboard");
   },
-  
 };
