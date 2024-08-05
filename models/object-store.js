@@ -3,7 +3,7 @@ import { initStore } from "../utils/store-utils.js";
 
 const db = initStore("objects");
 
-export const stationStore = {
+export const playlistStore = {
   async getAllObjects() {
     await db.read();
     return db.data.objects;
