@@ -11,7 +11,23 @@ export const stationStore = {
   
   async addStation(station) {
     await db.read();
-    pla
+    station._id = v4();
+    db.data.stations.push(station);
+    await db.write();
+    return station;
+  },
+  
+  async getStationById(id) {
+    await db.read();
+    const list = db.data.stations.find((station) => station._id === id);
+    return list;
+  },
+  
+  async deleteStationById(id) {
+    await db.read();
+    const index db.data.stations.findIndex((station) => station._id === id);
+    db.data.playlists.splice(index, 1);
+    await db.write();
   }
   
 }
