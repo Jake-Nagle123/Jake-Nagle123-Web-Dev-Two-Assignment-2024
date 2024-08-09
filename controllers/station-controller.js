@@ -20,7 +20,7 @@ export const stationController = {
       winddirection: Number(request.body.winddirection),
       pressure: Number(request.body.pressure),
     };
-    console.log(`adding report ${newReport.code}`);
+    console.log(`adding report code ${newReport.code} + for station._id`);
     await reportStore.addReport(station._id, newReport);
     response.redirect("/station/" + station._id);
   },

@@ -1,1 +1,32 @@
-{"file":"./models/reports.json","reports":[]}
+{
+  "file": "./models/reports.json",
+  "reports": [
+    {
+      "code": 804,
+      "temperature": 288.3,
+      "windspeed": 3.27,
+      "winddirection": 182,
+      "pressure": 1015,
+      "_id": "6fa85c5b-c5e2-4eef-9281-aaa4265170a7",
+      "stationid": "d5a6490a-64f8-4dc8-9449-4829041efcaa"
+    },
+    {
+      "code": 200,
+      "temperature": 291.5,
+      "windspeed": 3.01,
+      "winddirection": 319,
+      "pressure": 1014,
+      "_id": "acd368f9-1b72-4b21-b703-70535c00722a",
+      "stationid": "d5a6490a-64f8-4dc8-9449-4829041efcaa"
+    },
+    {
+      "code": 200,
+      "temperature": 0,
+      "windspeed": 0,
+      "winddirection": 0,
+      "pressure": 0,
+      "_id": "3055985d-2d62-4bdf-b273-69cd523c810d",
+      "stationid": "d5a6490a-64f8-4dc8-9449-4829041efcaa"
+    }
+  ]
+}
