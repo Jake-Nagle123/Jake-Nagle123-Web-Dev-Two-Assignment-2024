@@ -11,14 +11,17 @@ export const stationController = {
     response.render("station-view", viewData);
   },
   
-  async addReport(request, repsonse) {
+  async addReport(request, response) {
     const station = await stationStore.getStationById(request.params.id);
     const newReport = {
       code: Number(request.body.code),
       temperature: Number(request.body.temperature),
       windspeed: Number(request.body.windspeed),
-      winddirection: Number(request.)
-    }
-  }
-  
+      winddirection: Number(request.body.winddirection),
+      pressure: Number(request.body.pressure),
+    };
+    console.log(`adding report ${newReport.code}`);
+    await reportStore.addReport(station._id, newReport);
+    response.redirect("/station/" + station._id);
+  },
 };
