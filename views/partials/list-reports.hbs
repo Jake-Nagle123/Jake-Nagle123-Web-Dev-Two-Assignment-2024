@@ -2,7 +2,7 @@
   <thead>
     <tr>
       <th>Code</th>
-      <th>Temp</th>
+      <th>Temperature</th>
       <th>Wind Speed</th>
       <th>Wind Direction</th>
       <th>Pressure</th>
@@ -11,7 +11,22 @@
   <tbody>
     {{#each station.reports}}
     <tr>
-      
+      <td>
+        {{code}}
+      </td>
+      <td>
+        {{temperature}}
+      </td>
+      <td>
+        {{windspeed}}
+      </td>
+      <td>
+        {{winddirection}}
+      </td>
+      <td>
+        {{pressure}}
+      </td>
     </tr>
+    {{/each}}
   </tbody>
 </table>
