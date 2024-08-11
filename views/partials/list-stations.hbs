@@ -3,9 +3,11 @@
   <h2 class="title">
     {{title}}
   </h2>
-  <a href="/station/{{_id}}" class="button">
+  <a href="/station/{{_id}}" class="button is-light">
     {{> icons/open}}
   </a>
-  
+  <a href="/dashboard/deletestation/{{_id}}" class="button is-light">
+    {{> icons/delete}}
+  </a>
 </div>
 {{/each}}
