@@ -12,6 +12,36 @@
     {
       "title": "station 3",
       "_id": "ab66332e-424d-4e42-9293-6a0527a5f357"
+    },
+    {
+      "title": "station 1",
+      "userid": "c3c81b7d-11d0-49a0-b90a-97842922f139",
+      "_id": "78de405f-cce8-4fd6-994d-d5a79aabd12f"
+    },
+    {
+      "title": "station 2",
+      "userid": "c3c81b7d-11d0-49a0-b90a-97842922f139",
+      "_id": "10b45d29-1d5f-4f43-8189-ac03317e5e50"
+    },
+    {
+      "title": "station 3",
+      "userid": "c3c81b7d-11d0-49a0-b90a-97842922f139",
+      "_id": "e9bd3ec2-3b83-48fc-ba53-c5b4c4654489"
+    },
+    {
+      "title": "station 1",
+      "userid": "da4664aa-b89b-4191-b954-f062f79e1db8",
+      "_id": "0ca789a5-110a-49f1-953a-04d27fc9d1bb"
+    },
+    {
+      "title": "test station user 2",
+      "userid": "da4664aa-b89b-4191-b954-f062f79e1db8",
+      "_id": "e1ef8c1c-3aa7-4be4-80a8-9d343c12cf05"
+    },
+    {
+      "title": "user 2 station",
+      "userid": "da4664aa-b89b-4191-b954-f062f79e1db8",
+      "_id": "cd3982e1-f1bd-4cdd-917f-43b6bdd901c1"
     }
   ]
 }

@@ -13,8 +13,10 @@ export const dashboardController = {
   },
   
   async addStation(request, response) {
+    const loggedInUser = await accountsController.getLoggedInUser(request);
     const newStation = {
       title: request.body.title,
+      userid: loggedInUser._id,
     };
     console.log(`adding station ${newStation.title}`);
     await stationStore.addStation(newStation);
