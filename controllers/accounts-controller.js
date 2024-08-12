@@ -11,6 +11,33 @@ export const accountsController = {
   login(request, response) {
     const viewData = {
       title: "Login to the Service",
+    };
+    response.render("login-view", viewData);
+  },
+  
+  logout(request, response) {
+    response.cookie("station", "");
+    response.redirect("/");
+  },
+  
+  signup(request, response) {
+    const viewData = {
+      title: "Login to the Service",
+    };
+    response.render("signup-view", viewData);
+  },
+  
+  async register(request, response) {
+    const user = request.body;
+    await userStore.addUser(user);
+    console.log(`registering ${user.email}`);
+    response.redirect("/");
+  },
+  
+  async authenticate(request, response) {
+    const user = await userStore.getUserByEmail(request.body.email);
+    if (user) {
+      response.cookies
     }
   }
 
