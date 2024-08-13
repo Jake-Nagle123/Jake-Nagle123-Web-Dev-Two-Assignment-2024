@@ -42,6 +42,13 @@
       "title": "user 2 station",
       "userid": "da4664aa-b89b-4191-b954-f062f79e1db8",
       "_id": "cd3982e1-f1bd-4cdd-917f-43b6bdd901c1"
+    },
+    {
+      "title": "Test lat station",
+      "latitude": "456",
+      "longitude": "789",
+      "userid": "c3c81b7d-11d0-49a0-b90a-97842922f139",
+      "_id": "c18fa941-47b7-4519-a891-d1604ecd5729"
     }
   ]
 }
