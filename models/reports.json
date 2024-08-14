@@ -90,6 +90,15 @@
       "pressure": 1015,
       "_id": "622d7398-22a9-4d29-b80c-08b3f9c6c061",
       "stationid": "78de405f-cce8-4fd6-994d-d5a79aabd12f"
+    },
+    {
+      "code": 804,
+      "temperature": 291.8,
+      "windspeed": 3.27,
+      "winddirection": null,
+      "pressure": 1015,
+      "_id": "ac43813f-cb43-423c-85e4-cedf99f683f7",
+      "stationid": "78de405f-cce8-4fd6-994d-d5a79aabd12f"
     }
   ]
 }

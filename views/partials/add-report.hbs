@@ -14,21 +14,21 @@
         <label class="label">Wind speed</label> 
         <input class="input is-medium" type="text" placeholder="00.00km/h" name="windspeed">
       </div>
-      <div class="field pt-4 has-addons">
+      <div class="field pt-6 has-addons">
+        <label class="label">Wind Direction</label> 
         <div class="control">
           <span class="select">
-            <option>Degrees</option>
-            <option>Letters</option>
+            <select>
+              <option>Degrees</option>
+              <option>Letters</option>              
+            </select>
           </span>
-        <div class="select is-info is-normal is-hovered">
-          <select>
-            <option class>Select Dropdown</option>
-
-          </select>
         </div>
-        </div>
-        <input class="input is-medium" type="text" placeholder="000deg / NSEW" name="winddirection">
+        <div class="control">
+          <input class="input is-medium" type="text" placeholder="000deg / NSEW" name="winddirection">
+        </div>  
       </div>
+        
       <div class="field pt-4">
         <label class="label">Pressure</label> 
         <input class="input is-medium" type="text" placeholder="000hPa" name="pressure">
