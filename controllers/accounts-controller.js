@@ -51,7 +51,12 @@ export const accountsController = {
   },
   
   async update(request, response) {
-    const userId = re
+    const updatedUser = {
+      email: request.body.email,
+      password: request.body.password,
+    };
+    console.log(`Updating user email ${user.email}`);
+    const user = await userStore.
   }
 
 };
