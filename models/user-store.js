@@ -24,7 +24,9 @@ export const userStore = {
   
   async updateUser(userId, updatedUser) {
     const user = await this.getUserById(userId);
-    user.email = updatedEmail.
+    user.email = updatedUser.email;
+    user.password = updatedUser.password;
+    await db.write();
   },
   
   async getUserByEmail(email) {
