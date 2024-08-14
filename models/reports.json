@@ -99,6 +99,24 @@
       "pressure": 1015,
       "_id": "ac43813f-cb43-423c-85e4-cedf99f683f7",
       "stationid": "78de405f-cce8-4fd6-994d-d5a79aabd12f"
+    },
+    {
+      "code": 804,
+      "temperature": 291.8,
+      "windspeed": 3.27,
+      "winddirection": null,
+      "pressure": 1015,
+      "_id": "86a5a320-1104-47b2-820e-76928dd13cb3",
+      "stationid": "78de405f-cce8-4fd6-994d-d5a79aabd12f"
+    },
+    {
+      "code": 800,
+      "temperature": 288.3,
+      "windspeed": 2.57,
+      "winddirection": 230,
+      "pressure": 1014,
+      "_id": "cf76d347-9b68-4768-8f8d-bcb2db0a674e",
+      "stationid": "78de405f-cce8-4fd6-994d-d5a79aabd12f"
     }
   ]
 }
