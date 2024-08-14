@@ -49,5 +49,9 @@ export const accountsController = {
     const userEmail = request.cookies.station;
     return await userStore.getUserByEmail(userEmail);
   },
+  
+  async update(request, response) {
+    const userId = re
+  }
 
 };
