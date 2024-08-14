@@ -58,7 +58,8 @@ export const accountsController = {
     };
     console.log(`Updating user email ${user.email}`);
     const user = await userStore.getUserById(userId);
-    await userStore.updateUser()
-  }
+    await userStore.updateUser(user, updatedUser);
+    response.redirect("/dashboard" + userId);
+  },
 
 };
