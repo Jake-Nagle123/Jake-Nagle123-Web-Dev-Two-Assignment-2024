@@ -52,12 +52,13 @@ export const accountsController = {
   
   
   async viewUpdatePage(request, response) {
+    const id = request.params._id;
     const usernameId = request.params.username;
     const passwordId = request.params.password;
     console.log(`Editing username ${usernameId} and {passwordId}`);
     const viewData = {
       title: "Edit User Details",
-      user:   await userStore.getUserById(id),
+      user: await userStore.getUserById(id),
     };
     response.render("listdetails", viewData);
   },
