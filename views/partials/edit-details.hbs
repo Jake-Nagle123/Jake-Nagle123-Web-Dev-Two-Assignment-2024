@@ -1,7 +1,7 @@
 {{> menu}}
 
 <form class="box" action="/user/{{user._id}}/updateuser" method="POST">
-  <label>User Details:</label>
+  <label>Update User Details:</label>
     <div class="field is-horizontal">
       <div class="field-body">
         <div class="field">
@@ -11,5 +11,8 @@
           <input class="input" type="password" placeholder="Enter new password" name="password">
         </div>
       </div>
-  </div>
+    </div>
+    <button class="button is-info">
+      Update Details
+    </button>
 </form>
