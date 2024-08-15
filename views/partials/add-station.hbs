@@ -15,10 +15,18 @@
     </div>
   </div>
   </div>
-  <button class="button is-link">
-    Add Station
-  </button>
-  <div>
-    <a href="/"
+  <div class="field is-horizontal">
+    <div class="field-body">
+      <div class="field">
+        <button class="button is-link">
+            Add Station
+        </button> 
+      </div>  
+      <div class="field">
+        <a href="/user/{{../user.id}}/editdetails/{{_id}}" class="button">
+          {{> icons/edit}}
+        </a>
+      </div>
+    </div>
   </div>
 </form>
