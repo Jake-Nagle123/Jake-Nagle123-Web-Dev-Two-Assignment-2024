@@ -1,4 +1,5 @@
 import { userStore } from "../models/user-store.js";
+import { users } from "../models/users.js";
 
 export const accountsController = {
   index(request, response) {
@@ -53,7 +54,8 @@ export const accountsController = {
   
   async viewUpdatePage(request, response) {
     const id = request.params._id;
-    const usernameId = request.params.username;
+    const firstname = request
+    const usernameId = request.params.user;
     const passwordId = request.params.password;
     console.log(`Editing username ${usernameId} and {passwordId}`);
     const viewData = {
