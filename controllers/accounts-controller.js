@@ -57,9 +57,9 @@ export const accountsController = {
     console.log(`Editing username ${usernameId} and {passwordId}`);
     const viewData = {
       title: "Edit User Details",
-      email: await userStore.getUserByEmail(email),
-      password: await userStore.
-    }
+      user:   await userStore.getUserById(id),
+    };
+    response.render("")
   }
   
   async update(request, response) {
