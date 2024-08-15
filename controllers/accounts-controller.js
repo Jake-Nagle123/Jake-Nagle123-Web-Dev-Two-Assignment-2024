@@ -50,6 +50,13 @@ export const accountsController = {
     return await userStore.getUserByEmail(userEmail);
   },
   
+  
+  async viewUpdatePage(request, response) {
+    const usernameId = request.params.username;
+    const passwordId = request.params.password;
+    console.log(`Editing username ${usernameId} and {passwordId}`)
+  }
+  
   async update(request, response) {
     const userId = request.params.userid;
     const updatedUser = {
