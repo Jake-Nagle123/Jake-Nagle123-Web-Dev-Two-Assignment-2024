@@ -24,6 +24,8 @@ export const userStore = {
   
   async updateUser(id, updatedUser) {
     const user = await this.getUserById(id);
+    user.firstName = updatedUser.firstName;
+    user.secondName = updatedUser.secondName;
     user.email = updatedUser.email;
     user.password = updatedUser.password;
     await db.write();
@@ -37,7 +39,7 @@ export const userStore = {
   async getUserByPassword(password) {
     await db.read();
     return db.read.user.find((user) => user.password === password); 
-  }
+  },
   
   async deleteUserById(id) {
     await db.read();
