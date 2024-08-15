@@ -59,8 +59,8 @@ export const accountsController = {
       title: "Edit User Details",
       user:   await userStore.getUserById(id),
     };
-    response.render("")
-  }
+    response.render("listdetails", viewData);
+  },
   
   async update(request, response) {
     const userId = request.params.userid;
