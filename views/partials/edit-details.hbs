@@ -1,3 +1,15 @@
 {{> menu}}
 
-<form class="box" action="/station/"
+<form class="box" action="/user/{{user._id}}/updateuser" method="POST">
+  <label>User Details:</label>
+    <div class="field is-horizontal">
+      <div class="field-body">
+        <div class="field">
+          <input class="input" type="text" placeholder="Enter new email" name="email">
+        </div>
+        <div class="field">
+          <input class="input" type="password" placeholder="Enter new password" name="password">
+        </div>
+      </div>
+  </div>
+</form>
