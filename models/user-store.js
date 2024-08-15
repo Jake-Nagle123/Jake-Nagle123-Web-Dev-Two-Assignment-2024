@@ -22,8 +22,8 @@ export const userStore = {
     return db.data.users.find((user) => user._id === id);
   },
   
-  async updateUser(id, updatedUser) {
-    const user = await this.getUserById(id);
+  async updateUser(userId, updatedUser) {
+    const user = await this.getUserById(userId);
     user.firstName = updatedUser.firstName;
     user.secondName = updatedUser.secondName;
     user.email = updatedUser.email;
