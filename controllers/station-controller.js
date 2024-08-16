@@ -4,6 +4,18 @@ import { reportStore } from "../models/report-store.js";
 export const stationController = {
   async index(request, response) {
     const station = await stationStore.getStationById(request.params.id);
+    
+    let minTemp = null;
+    if (station.reports.length > 0) {
+      minTemp = station.reports[0];
+      for (let i = 1; i < station.reports.length; i++) {
+        if(station.reports[i].temperature < minTemp.temperature) {
+          minTemp = station.reports[i]
+        }
+      }
+    }
+    console.log(minTemp);
+    
     const viewData = {
       title: "Station",
       station: station,
