@@ -10,11 +10,17 @@ export const stationController = {
       minTemp = station.reports[0];
       for (let i = 1; i < station.reports.length; i++) {
         if(station.reports[i].temperature < minTemp.temperature) {
-          minTemp = station.reports[i]
+          minTemp = station.reports[i];
         }
       }
     }
     console.log(minTemp);
+    
+    let maxTemp = null;
+    if(station.reports.length > 0) {
+      maxTemp = station.reports[0];
+      for()
+    }
     
     const viewData = {
       title: "Station",
