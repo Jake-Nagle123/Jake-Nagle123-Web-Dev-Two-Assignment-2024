@@ -90,6 +90,15 @@
       "pressure": 1015,
       "_id": "622d7398-22a9-4d29-b80c-08b3f9c6c061",
       "stationid": "78de405f-cce8-4fd6-994d-d5a79aabd12f"
+    },
+    {
+      "code": 123,
+      "temperature": 11,
+      "windspeed": 11,
+      "winddirection": null,
+      "pressure": 12,
+      "_id": "54df809c-ba3e-44a8-9fe7-b41e199eb7ca",
+      "stationid": "1f178ca0-0707-43f9-9371-e9921f81508e"
     }
   ]
 }

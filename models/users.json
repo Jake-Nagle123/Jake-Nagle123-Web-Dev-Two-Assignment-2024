@@ -14,6 +14,13 @@
       "email": "usertwo@gmail.com",
       "password": "bye",
       "_id": "da4664aa-b89b-4191-b954-f062f79e1db8"
+    },
+    {
+      "firstName": "john",
+      "lastName": "smith",
+      "email": "john@gmail.com",
+      "password": "123456",
+      "_id": "a751b14a-e32d-4fb6-aaaf-36c0b2782af9"
     }
   ]
 }
