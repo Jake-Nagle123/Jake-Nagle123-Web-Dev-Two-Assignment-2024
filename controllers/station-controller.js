@@ -32,6 +32,7 @@ export const stationController = {
     const viewData = {
       title: "Station",
       station: station,
+      maxTemp: maxTemp,
     };
     response.render("station-view", viewData);
   },
