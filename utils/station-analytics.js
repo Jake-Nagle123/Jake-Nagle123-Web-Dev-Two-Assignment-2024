@@ -20,6 +20,10 @@ export const stationAnalytics = {
         if(station.reports[i].temperature < minTemp.temperature) {
           minTemp = station.reports[i];
         }
+      } else {
+        if (stations.reports.length < 0) {
+          minTemp = 0.0;
+        }
       }
     }
     return minTemp;
