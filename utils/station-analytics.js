@@ -12,4 +12,17 @@ export const stationAnalytics = {
     return maxTemp;
   },
   
+  getMinTemp(station) {
+    let minTemp = null;
+    if (station.reports.length > 0) {
+      minTemp = station.reports[0];
+      for (let i = 1; i < station.reports.length; i++) {
+        if(station.reports[i].temperature < minTemp.temperature) {
+          minTemp = station.reports[i];
+        }
+      }
+    }
+    return minTemp;
+  },
+
 };
