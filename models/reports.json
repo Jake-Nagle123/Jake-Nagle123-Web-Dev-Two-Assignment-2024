@@ -74,15 +74,6 @@
       "stationid": "1f178ca0-0707-43f9-9371-e9921f81508e"
     },
     {
-      "code": 804,
-      "temperature": 400,
-      "windspeed": 3.01,
-      "winddirection": 182,
-      "pressure": 1015,
-      "_id": "d9bc643d-d085-496b-8c58-b06c9c2e38e9",
-      "stationid": "78de405f-cce8-4fd6-994d-d5a79aabd12f"
-    },
-    {
       "code": 200,
       "temperature": 300,
       "windspeed": 3.6,
