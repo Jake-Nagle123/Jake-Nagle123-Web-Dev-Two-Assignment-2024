@@ -29,7 +29,7 @@ export const stationController = {
     if (station.reports.length > 0) {
       minWindDirection = station.reports[0];
       for (let i = 1; i < station.reports.length; i++) {
-        if(station.reports[i].winddirection < minTemp.winddirection) {
+        if(station.reports[i].winddirection < minWindDirection.winddirection) {
           minWindDirection = station.reports[i];
         }
       } 
@@ -44,6 +44,8 @@ export const stationController = {
       minTemp: minTemp,
       maxWindSpeed: maxWindSpeed,
       minWindSpeed: minWindSpeed,
+      maxWindDirection: maxWindDirection,
+      minWindDirection: minWindDirection,
     };
     response.render("station-view", viewData);
   },

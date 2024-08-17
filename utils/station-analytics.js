@@ -50,5 +50,7 @@ export const stationAnalytics = {
     }
     return minWindSpeed;
   },
+  
+  getMaxWindDirection
 
 };
