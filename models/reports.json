@@ -65,33 +65,6 @@
       "stationid": "78de405f-cce8-4fd6-994d-d5a79aabd12f"
     },
     {
-      "code": 800,
-      "temperature": 288.3,
-      "windspeed": 3.27,
-      "winddirection": null,
-      "pressure": 1015,
-      "_id": "ce0c478d-19cc-4b41-b009-54cda3095ed4",
-      "stationid": "78de405f-cce8-4fd6-994d-d5a79aabd12f"
-    },
-    {
-      "code": 804,
-      "temperature": 291.8,
-      "windspeed": 2.57,
-      "winddirection": null,
-      "pressure": 1014,
-      "_id": "3af423bd-f172-4cea-a732-322f31b97fa2",
-      "stationid": "78de405f-cce8-4fd6-994d-d5a79aabd12f"
-    },
-    {
-      "code": 804,
-      "temperature": 291.8,
-      "windspeed": 3.01,
-      "winddirection": null,
-      "pressure": 1015,
-      "_id": "622d7398-22a9-4d29-b80c-08b3f9c6c061",
-      "stationid": "78de405f-cce8-4fd6-994d-d5a79aabd12f"
-    },
-    {
       "code": 123,
       "temperature": 11,
       "windspeed": 11,
@@ -179,6 +152,24 @@
       "winddirection": 319,
       "pressure": 1014,
       "_id": "52948310-252d-45a3-bd4a-b8ad91066d77",
+      "stationid": "78de405f-cce8-4fd6-994d-d5a79aabd12f"
+    },
+    {
+      "code": 180,
+      "temperature": 300,
+      "windspeed": 4.5,
+      "winddirection": 280,
+      "pressure": 1100,
+      "_id": "0de103e3-ac0a-4c8a-9df9-45f8af7b8214",
+      "stationid": "78de405f-cce8-4fd6-994d-d5a79aabd12f"
+    },
+    {
+      "code": 180,
+      "temperature": 263.2,
+      "windspeed": 2.3,
+      "winddirection": 230,
+      "pressure": 800,
+      "_id": "af7ec4b0-9b17-4f0b-aed5-ce9d0bfab110",
       "stationid": "78de405f-cce8-4fd6-994d-d5a79aabd12f"
     }
   ]
