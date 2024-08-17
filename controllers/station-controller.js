@@ -10,15 +10,31 @@ export const stationController = {
     const maxWindSpeed = stationAnalytics.getMaxWindSpeed(station);
     const minWindSpeed = stationAnalytics.getMinWindSpeed(station);
     
-    console.log(`loading max`);
-    
-   
+    console.log(`loading max Wind Direction`);
+    let maxWindDirection = null;
+    if(station.reports.length > 0) {
+      maxWindDirection = station.reports[0];
+      for(let i = 1; i < station.reports.length; i++) {
+        if(station.reports[i].winddirection > maxWindDirection.winddirection) {
+          maxWindDirection = station.reports[i];
+        }
+      }
+    }
+    console.log(maxWindDirection);
     
     
   
     console.log(`loading min`);
-    
-
+    let minWindDirection = null;
+    if (station.reports.length > 0) {
+      minWindDirection = station.reports[0];
+      for (let i = 1; i < station.reports.length; i++) {
+        if(station.reports[i].winddirection < minTemp.winddirection) {
+          minWindDirection = station.reports[i];
+        }
+      } 
+    }
+    console.log(minWindDirection);
     
         
     const viewData = {
