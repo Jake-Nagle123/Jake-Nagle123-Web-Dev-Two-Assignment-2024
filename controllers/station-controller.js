@@ -23,12 +23,25 @@ export const stationController = {
     
   
     console.log(`loading minWind`);
+    
+    let minWindSpeed = null;
+    if(station.reports.length > 0) {
+      minWindSpeed = station.reports[0];
+      for(let i = 1; i < station.reports.length; i++) {
+        if(station.reports[i].windspeed < minWindSpeed.windspeed) {
+          minWindSpeed = station.reports[i];
+        }
+      }
+    }
+    console.log(minWindSpeed);
         
     const viewData = {
       title: "Station",
       station: station,
       maxTemp: maxTemp,
       minTemp: minTemp,
+      maxWindSpeed: maxWindSpeed,
+      minWindSpeed: maxWindSpeed,
     };
     response.render("station-view", viewData);
   },
