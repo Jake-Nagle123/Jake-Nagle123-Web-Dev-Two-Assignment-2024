@@ -11,37 +11,9 @@ export const stationController = {
     const minWindSpeed = stationAnalytics.getMinWindSpeed(station);
     const maxWindDirection = stationAnalytics.getMaxWindDirection(station);
     const minWindDirection = stationAnalytics.getMinWindDirection(station);
-    
-    console.log(`loading max pressure`);
-    let maxPressure = null;
-    if(station.reports.length > 0) {
-      maxPressure = station.reports[0];
-      for(let i = 1; i < station.reports.length; i++) {
-        if(station.reports[i].pressure > maxPressure.pressure) {
-          maxPressure = station.reports[i];
-        }
-      }
-    }
-    console.log(maxPressure);
-    
-    
-    
-  
-    console.log(`loading min pressure`);
-    let minPressure = null;
-    if (station.reports.length > 0) {
-      minPressure = station.reports[0];
-      for (let i = 1; i < station.reports.length; i++) {
-        if(station.reports[i].pressure < minPressure.pressure) {
-          minPressure = station.reports[i];
-        }
-      } 
-    }
-    console.log(minPressure);
-
-    
-    
-        
+    const maxPressure = stationAnalytics.getMaxPressure(station);
+    const minPressure = stationAnalytics.getMinPressure(station);
+      
     const viewData = {
       title: "Station",
       station: station,
@@ -51,7 +23,8 @@ export const stationController = {
       minWindSpeed: minWindSpeed,
       maxWindDirection: maxWindDirection,
       minWindDirection: minWindDirection,
-      
+      maxPressure: maxPressure,
+      minPressure: minPressure,
     };
     response.render("station-view", viewData);
   },
