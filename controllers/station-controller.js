@@ -1,9 +1,11 @@
 import { stationStore } from "../models/station-store.js";
 import { reportStore } from "../models/report-store.js";
+import { stationAnalytics } from "../utils/station-analytics.js";
 
 export const stationController = {
   async index(request, response) {
     const station = await stationStore.getStationById(request.params.id);
+    const maxTemp = stationAnalytics.getMaxTemp(station);
     
     console.log(`loading minTemp`);
     
@@ -19,7 +21,7 @@ export const stationController = {
     console.log(minTemp);
    
     
-    console.log(`loading maxTemp`);
+    console.log(`enter info`);
         
     const viewData = {
       title: "Station",

@@ -171,6 +171,15 @@
       "pressure": 1100,
       "_id": "a832988a-363b-460a-95da-47fcaa9de931",
       "stationid": "78de405f-cce8-4fd6-994d-d5a79aabd12f"
+    },
+    {
+      "code": 180,
+      "temperature": 400,
+      "windspeed": 3.6,
+      "winddirection": 230,
+      "pressure": 800,
+      "_id": "f8e97574-09a6-4600-9d14-06f7c32a0414",
+      "stationid": "78de405f-cce8-4fd6-994d-d5a79aabd12f"
     }
   ]
 }
