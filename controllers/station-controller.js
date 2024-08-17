@@ -10,16 +10,16 @@ export const stationController = {
     
     console.log(`loading maxWind`);
     
-    let maxWind = null;
+    let maxWindSpeed = null;
     if(station.reports.length > 0) {
-      maxWind = station.reports[0];
+      maxWindSpeed = station.reports[0];
       for(let i = 1; i < station.reports.length; i++) {
-        if(station.reports[i].wind > maxWind.temperature) {
-          maxWind = station.reports[i];
+        if(station.reports[i].windspeed > maxWindSpeed.windspeed) {
+          maxWindSpeed = station.reports[i];
         }
       }
     }
-    console.log(maxWind);
+    console.log(maxWindSpeed);
     
   
     console.log(`loading minWind`);
