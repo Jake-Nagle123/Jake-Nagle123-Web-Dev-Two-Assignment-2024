@@ -8,13 +8,21 @@ export const stationController = {
     const maxTemp = stationAnalytics.getMaxTemp(station);
     const minTemp = stationAnalytics.getMinTemp(station);
     
-    console.log(`loading max`);
+    console.log(`loading maxWind`);
     
-
+    let maxWind = null;
+    if(station.reports.length > 0) {
+      maxWind = station.reports[0];
+      for(let i = 1; i < station.reports.length; i++) {
+        if(station.reports[i].wind > maxWind.temperature) {
+          maxWind = station.reports[i];
+        }
+      }
+    }
+    console.log(maxWind);
     
-   
-    
-    console.log(`min`);
+  
+    console.log(`loading minWind`);
         
     const viewData = {
       title: "Station",
