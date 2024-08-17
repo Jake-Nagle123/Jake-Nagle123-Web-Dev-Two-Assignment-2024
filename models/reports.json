@@ -171,6 +171,15 @@
       "pressure": 1014,
       "_id": "62e4ef2d-7ca7-4ed5-9afe-3189c6910dcb",
       "stationid": "e9bd3ec2-3b83-48fc-ba53-c5b4c4654489"
+    },
+    {
+      "code": 200,
+      "temperature": 240,
+      "windspeed": 3.45,
+      "winddirection": 319,
+      "pressure": 1014,
+      "_id": "52948310-252d-45a3-bd4a-b8ad91066d77",
+      "stationid": "78de405f-cce8-4fd6-994d-d5a79aabd12f"
     }
   ]
 }

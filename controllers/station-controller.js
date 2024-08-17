@@ -5,16 +5,20 @@ export const stationController = {
   async index(request, response) {
     const station = await stationStore.getStationById(request.params.id);
     
+    console.log(`loading minTemp`);
+    
     let minTemp = null;
     if (station.reports.length > 0) {
       minTemp = station.reports[0];
       for (let i = 1; i < station.reports.length; i++) {
         if(station.reports[i].temperature < minTemp.temperature) {
-          minTemp = station.reports[i];
+          minTemp = station.reports[i].temperature;
         }
       }
     }
     console.log(minTemp);
+    
+    
     
     console.log(`loading maxTemp`);
     
