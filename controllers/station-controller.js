@@ -9,32 +9,37 @@ export const stationController = {
     const minTemp = stationAnalytics.getMinTemp(station);
     const maxWindSpeed = stationAnalytics.getMaxWindSpeed(station);
     const minWindSpeed = stationAnalytics.getMinWindSpeed(station);
+    const maxWindDirection = stationAnalytics.getMaxWindDirection(station);
+    const minWindDirection = stationAnalytics.getMinWindDirection(station);
     
-    console.log(`loading max Wind Direction`);
-    let maxWindDirection = null;
+    console.log(`loading max pressure`);
+    let maxPressure = null;
     if(station.reports.length > 0) {
-      maxWindDirection = station.reports[0];
+      maxPressure = station.reports[0];
       for(let i = 1; i < station.reports.length; i++) {
-        if(station.reports[i].winddirection > maxWindDirection.winddirection) {
-          maxWindDirection = station.reports[i];
+        if(station.reports[i].pressure > maxPressure.pressure) {
+          maxPressure = station.reports[i];
         }
       }
     }
-    console.log(maxWindDirection);
+    console.log(maxPressure);
+    
     
     
   
-    console.log(`loading min`);
-    let minWindDirection = null;
+    console.log(`loading min pressure`);
+    let minPressure = null;
     if (station.reports.length > 0) {
-      minWindDirection = station.reports[0];
+      minPressure = station.reports[0];
       for (let i = 1; i < station.reports.length; i++) {
-        if(station.reports[i].winddirection < minWindDirection.winddirection) {
-          minWindDirection = station.reports[i];
+        if(station.reports[i].pressure < minPressure.pressure) {
+          minPressure = station.reports[i];
         }
       } 
     }
-    console.log(minWindDirection);
+    console.log(minPressure);
+
+    
     
         
     const viewData = {
@@ -46,6 +51,7 @@ export const stationController = {
       minWindSpeed: minWindSpeed,
       maxWindDirection: maxWindDirection,
       minWindDirection: minWindDirection,
+      
     };
     response.render("station-view", viewData);
   },

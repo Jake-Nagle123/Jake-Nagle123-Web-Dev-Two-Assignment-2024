@@ -51,6 +51,30 @@ export const stationAnalytics = {
     return minWindSpeed;
   },
   
-  getMaxWindDirection
+  getMaxWindDirection(station) {
+    let maxWindDirection = null;
+    if(station.reports.length > 0) {
+      maxWindDirection = station.reports[0];
+      for(let i = 1; i < station.reports.length; i++) {
+        if(station.reports[i].winddirection > maxWindDirection.winddirection) {
+          maxWindDirection = station.reports[i];
+        }
+      }
+    }
+    return maxWindDirection;
+  },
+  
+  getMinWindDirection(station) {
+    let minWindDirection = null;
+    if (station.reports.length > 0) {
+      minWindDirection = station.reports[0];
+      for (let i = 1; i < station.reports.length; i++) {
+        if(station.reports[i].winddirection < minWindDirection.winddirection) {
+          minWindDirection = station.reports[i];
+        }
+      } 
+    }
+    return minWindDirection;
+  },
 
 };
