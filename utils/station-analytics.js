@@ -24,5 +24,31 @@ export const stationAnalytics = {
     }
     return minTemp;
   },
+  
+  getMaxWindSpeed(station) {
+   let maxWindSpeed = null;
+    if(station.reports.length > 0) {
+      maxWindSpeed = station.reports[0];
+      for(let i = 1; i < station.reports.length; i++) {
+        if(station.reports[i].windspeed > maxWindSpeed.windspeed) {
+          maxWindSpeed = station.reports[i];
+        }
+      }
+    }
+    return maxWindSpeed;
+  },
+  
+    getMinWindSpeed(station) {
+    let minWindSpeed = null;
+    if(station.reports.length > 0) {
+      minWindSpeed = station.reports[0];
+      for(let i = 1; i < station.reports.length; i++) {
+        if(station.reports[i].windspeed < minWindSpeed.windspeed) {
+          minWindSpeed = station.reports[i];
+        }
+      }
+    }
+    return minWindSpeed;
+  },
 
 };
