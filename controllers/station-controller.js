@@ -32,7 +32,6 @@ export const stationController = {
   async addReport(request, response) {
     const station = await stationStore.getStationById(request.params.id);
     const newReport = {
-      datetime: dayjs('2024-08-18').format('DD/MM/YYYY')
       code: Number(request.body.code),
       temperature: Number(request.body.temperature),
       windspeed: Number(request.body.windspeed),
