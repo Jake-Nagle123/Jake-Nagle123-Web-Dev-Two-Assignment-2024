@@ -56,6 +56,13 @@
       "longitude": "21",
       "userid": "a751b14a-e32d-4fb6-aaaf-36c0b2782af9",
       "_id": "1f178ca0-0707-43f9-9371-e9921f81508e"
+    },
+    {
+      "title": "test lat",
+      "latitude": "4.56",
+      "longitude": "5.78",
+      "userid": "c3c81b7d-11d0-49a0-b90a-97842922f139",
+      "_id": "78ba48a3-34d8-4d0b-8344-658b8481fa82"
     }
   ]
 }
