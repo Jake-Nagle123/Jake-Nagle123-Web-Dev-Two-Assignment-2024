@@ -171,6 +171,15 @@
       "pressure": 1014,
       "_id": "11914460-1b8b-4e7c-b3dd-fa2d47d13256",
       "stationid": "78de405f-cce8-4fd6-994d-d5a79aabd12f"
+    },
+    {
+      "code": 20,
+      "temperature": 291.8,
+      "windspeed": 3.6,
+      "winddirection": "NW",
+      "pressure": 1900,
+      "_id": "dce651f7-4a3e-474f-8875-628affd38a13",
+      "stationid": "78de405f-cce8-4fd6-994d-d5a79aabd12f"
     }
   ]
 }
