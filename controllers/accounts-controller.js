@@ -59,7 +59,7 @@ export const accountsController = {
       title: "Edit User Details",
       user: await userStore.getUserById(userId),
     };
-    response.render("listdetails", viewData);
+    response.render("list-details", viewData);
   },
   
   async update(request, response) {

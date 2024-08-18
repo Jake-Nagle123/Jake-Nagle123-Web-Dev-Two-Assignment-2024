@@ -153,6 +153,15 @@
       "pressure": 1100,
       "_id": "9a259724-1f1c-4674-8945-82a62799f067",
       "stationid": "78de405f-cce8-4fd6-994d-d5a79aabd12f"
+    },
+    {
+      "code": 180,
+      "temperature": 400,
+      "windspeed": 3.45,
+      "winddirection": "NSE",
+      "pressure": 800,
+      "_id": "b16298e2-2513-4c2f-89f3-a36a4ec31295",
+      "stationid": "78de405f-cce8-4fd6-994d-d5a79aabd12f"
     }
   ]
 }
