@@ -13,6 +13,8 @@
           <p>Lat: {{station.latitude}} </p>
           <p>lng: {{station.longitude}} </p>
       </article>
+       <div class="card-content">
+      </div>
     </section>
     </div>
     
@@ -29,7 +31,7 @@
       <article class="card-content">
         <p>Clear</p>
       </article>
-      <div class="card-content m-2">
+      <div class="card-content m-5">
       </div>
     </section>
     </div>
@@ -48,17 +50,19 @@
         <p>Max: {{maxTemp.temperature}}°С</p>
         <p>Min: {{minTemp.temperature}}°С</p>
       </article>
+       <div class="card-content">
+      </div>
     </section>
     </div>
       
     <div class="column is-auto">
     <section class="card has-background-black has-text-white">
       <header class="card-header">
-        <p class="card-header-title is-size-5 has-text-white is-pulled-left">
+        <p class="card-header-title is-size-5 has-text-white">
           Wind
         </p>
-        <div class="icon is-pulled-right">
-          {{> icons/rain}}
+        <div class="icon is-large is-pulled-right m-3">
+          {{> icons/windy}}
         </div>
       </header>
       <article class="card-content">
@@ -76,8 +80,8 @@
         <p class="card-header-title is-size-5 has-text-white is-pulled-left">
           Pressure
         </p>
-        <div class="icon is-pulled-right">
-          {{> icons/rain}}
+        <div class="icon is-large is-pulled-right m-3">
+          {{> icons/pressure}}
         </div>
       </header>
       <article class="card-content mb-6">
@@ -88,6 +92,8 @@
          Min: {{minPressure.pressure}}hPa
         </p>
       </article>
+       <div class="card-content m-4">
+      </div>
     </section>
     </div>     
 </div>
