@@ -7,5 +7,31 @@
   <div class="subtitle">
     Register below to get even more features offered by the company.
   </div>
-  
+  <form class="box" action="/register" method="POST">
+    <label class="label">Register</label>
+    <label class="label">Name</label>
+    <div class="field is-horizontal">
+      <div class="field-body">
+        <div class="field">
+          <input class="input" type="text" placeholder="Enter first name" name="firstName">
+        </div>
+        <div class="field">
+          <input class="input" type="text" placeholder="Enter last name" name="lastName">
+        </div>
+      </div>
+    </div>
+    <div class="field">
+      <label class="label">Email</label>
+      <input class="input" type="text" placeholder="Enter email" name="email">
+    </div>
+    <div class="field">
+      <label class="label">Password</label>
+      <input class="input" type="password" placeholder="Enter password" name="password">
+    </div>
+    <div class="field is grouped">
+      <button class="button is-link has-background-info has-text-white">
+        Sign up
+      </button>
+    </div>
+  </form>
 </section>
