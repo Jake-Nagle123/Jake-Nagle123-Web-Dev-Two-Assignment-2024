@@ -21,6 +21,20 @@
       "email": "john@gmail.com",
       "password": "123456",
       "_id": "a751b14a-e32d-4fb6-aaaf-36c0b2782af9"
+    },
+    {
+      "firstName": "Teddy",
+      "lastName": "Murphy",
+      "email": "user@email.com",
+      "password": "hi",
+      "_id": "64d94706-73fe-4e75-81fd-813aeaa50795"
+    },
+    {
+      "firstName": "test",
+      "lastName": "Green",
+      "email": "testhomepage@com",
+      "password": "hello",
+      "_id": "3b71851d-4e59-4e4e-959c-cdd27b38aec3"
     }
   ]
 }
