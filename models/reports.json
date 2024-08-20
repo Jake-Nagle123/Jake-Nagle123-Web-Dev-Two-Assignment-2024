@@ -180,24 +180,6 @@
       "pressure": 1900,
       "_id": "dce651f7-4a3e-474f-8875-628affd38a13",
       "stationid": "78de405f-cce8-4fd6-994d-d5a79aabd12f"
-    },
-    {
-      "code": 804,
-      "temperature": 300,
-      "windspeed": 3.45,
-      "winddirection": "230",
-      "pressure": 800,
-      "_id": "f3a9ccd6-ad35-48b4-b603-9beaa880165a",
-      "stationid": "d9b6caba-7650-48f3-a72f-2658e99f343c"
-    },
-    {
-      "code": 20,
-      "temperature": 240,
-      "windspeed": 4.5,
-      "winddirection": "182",
-      "pressure": 1900,
-      "_id": "3a77a9c4-b53f-42d4-a9c4-ee54542edec2",
-      "stationid": "d9b6caba-7650-48f3-a72f-2658e99f343c"
     }
   ]
 }

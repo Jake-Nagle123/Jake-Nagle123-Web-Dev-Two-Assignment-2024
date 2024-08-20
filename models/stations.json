@@ -63,20 +63,6 @@
       "longitude": "5.78",
       "userid": "c3c81b7d-11d0-49a0-b90a-97842922f139",
       "_id": "78ba48a3-34d8-4d0b-8344-658b8481fa82"
-    },
-    {
-      "title": "station1",
-      "latitude": "45",
-      "longitude": "-7.56",
-      "userid": "64d94706-73fe-4e75-81fd-813aeaa50795",
-      "_id": "d9b6caba-7650-48f3-a72f-2658e99f343c"
-    },
-    {
-      "title": "f",
-      "latitude": "456",
-      "longitude": "5.78",
-      "userid": "3b71851d-4e59-4e4e-959c-cdd27b38aec3",
-      "_id": "fbc7d546-b339-442f-8b5a-c3a866d24d35"
     }
   ]
 }
