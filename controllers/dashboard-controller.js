@@ -55,7 +55,7 @@ export const dashboardController = {
     console.log(`Updating user ${userId} details`);
     const user = await userStore.getUserById(userId);
     await userStore.updateUser(user, updatedUser);
-    response.redirect("/dashboard" + userId);
+    response.redirect("/dashboard");
   },
   
 };
