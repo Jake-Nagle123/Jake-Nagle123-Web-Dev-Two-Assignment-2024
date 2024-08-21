@@ -31,4 +31,30 @@ export const dashboardController = {
     await stationStore.deleteStationById(stationId);
     response.redirect("/dashboard");
   },
+  
+  
+    async viewUpdatePage(request, response) {
+    const userId = request.params.id;
+    console.log(`Editing username ${userId}`);
+    const viewData = {
+      title: "Edit User Details",
+      user: await userStore.getUserById(userId),
+    };
+    response.render("list-details", viewData);
+  },
+  
+  async update(request, response) {
+    const userId = request.params.userid;
+    const updatedUser = {
+      firstName: request.body.firstName,
+      secondName: request.body.secondName,
+      email: request.body.email,
+      password: request.body.password,
+    };
+    console.log(`Updating user ${userId} details`);
+    const user = await userStore.getUserById(userId);
+    await userStore.updateUser(user, updatedUser);
+    response.redirect("/dashboard" + userId);
+  },
+  
 };
