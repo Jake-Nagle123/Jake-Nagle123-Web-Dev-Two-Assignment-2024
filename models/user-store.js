@@ -23,7 +23,7 @@ export const userStore = {
   },
   
   async updateUser(id, updatedUser) {
-    const user = await updatedUser.getUserById(id);
+    const user = await user.getUserById(id);
     user.firstName = updatedUser.firstName;
     user.secondName = updatedUser.secondName;
     user.email = updatedUser.email;
