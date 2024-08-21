@@ -1,5 +1,6 @@
 import { stationStore } from "../models/station-store.js";
 import { accountsController } from "./accounts-controller.js";
+import { userStore } from "../models/user-store.js";
 
 export const dashboardController = {
   async index(request, response) {
@@ -40,7 +41,7 @@ export const dashboardController = {
       title: "Edit User Details",
       user: await userStore.getUserById(userId),
     };
-    response.render("list-details", viewData);
+    response.render("profile-view", viewData);
   },
   
   async update(request, response) {
