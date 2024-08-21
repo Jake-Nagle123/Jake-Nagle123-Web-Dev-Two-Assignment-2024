@@ -1,6 +1,7 @@
 import { v4 } from "uuid";
 import { initStore } from "../utils/store-utils.js";
 
+
 const db = initStore("users");
 
 export const userStore = {
@@ -23,7 +24,7 @@ export const userStore = {
   },
   
   async updateUser(id, updatedUser) {
-    await updatedUser = userStore.getUserById(id);
+    await updatedUser = users.getUserById(id);
     updatedUser.firstName = firstName;
     updatedUser.secondName = secondName;
     updated.email = email;
