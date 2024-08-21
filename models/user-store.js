@@ -22,13 +22,12 @@ export const userStore = {
     return db.data.users.find((loggedInUser) => loggedInUser._id === id);
   },
   
-  async updateUser(user, updatedUser) {
-    await db.read();
-    user = user.getUserById();
-    user.firstName = updatedUser.firstName;
-    user.secondName = updatedUser.secondName;
-    user.email = updatedUser.email;
-    user.password = updatedUser.password;
+  async updateUser(id, updatedUser) {
+    await updatedUser = userStore.getUserById(id);
+    updatedUser.firstName = firstName;
+    updatedUser.secondName = secondName;
+    updated.email = email;
+    updated.password = password;
     await db.write();
   },
   
