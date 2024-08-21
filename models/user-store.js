@@ -19,11 +19,11 @@ export const userStore = {
   
   async getUserById(id) {
     await db.read();
-    return db.data.users.find((user) => user._id === id);
+    return db.data.users.find((loggedInUser) => loggedInUser._id === id);
   },
   
-  async updateUser(userId, updatedUser) {
-    const user = await this.getUserById(userId);
+  async updateUser(id, updatedUser) {
+    const user = await updatedUser.getUserById(id);
     user.firstName = updatedUser.firstName;
     user.secondName = updatedUser.secondName;
     user.email = updatedUser.email;
