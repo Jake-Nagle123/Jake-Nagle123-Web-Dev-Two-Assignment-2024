@@ -51,7 +51,7 @@ You now have a copied version of the project in Glitch
 
 ## Links
 #### Links to my project
-1. Github: https://github.com/Jake-Nagle123/Web-Dev-Two-Assignment-2024.git
+1. Github: git@github.com:Jake-Nagle123/Jake-Nagle123-Web-Dev-Two-Assignment-2024.git
 2. Glitch: https://glitch.com/~weathertop-weather-station
 
 #### Link used to begin project
