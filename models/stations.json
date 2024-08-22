@@ -70,6 +70,13 @@
       "longitude": "-8.90",
       "userid": "c3c81b7d-11d0-49a0-b90a-97842922f139",
       "_id": "04f5b7fd-94fa-4815-b6d4-2319fa88300f"
+    },
+    {
+      "title": "test",
+      "latitude": "45",
+      "longitude": "-7.56",
+      "userid": "c3c81b7d-11d0-49a0-b90a-97842922f139",
+      "_id": "dc8e4f6c-6427-493f-8905-9ba65b75dc89"
     }
   ]
 }
